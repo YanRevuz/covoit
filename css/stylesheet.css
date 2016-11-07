@@ -44,6 +44,18 @@ body{
 	display:table
 }
 
+input{
+	box-shadow:inset 0 0 0 0 black;
+  	background: silver;
+	border-radius: 10px ;
+	height: 25px;
+	width: 200px;
+}
+
+.radio{
+	width: inherit;
+}
+
 #connect{
 	height:30px;
 	width:380px;
@@ -170,9 +182,9 @@ body{
 	margin:0px 5px 5px 5px;
 	padding:5px;
 	font-size:12pt;
-   min-height:25px;
-   border-radius:10px;	
-   border:1px #222222 solid;
+   	min-height:25px;
+   	border-radius:10px;	
+   	border:1px #222222 solid;
 	box-shadow:1px 1px 3px #000000 inset;
 }
 
@@ -183,6 +195,23 @@ body{
 label{
 	font-size:12pt;
    font-weight:bold;	
+}
+
+table{
+	border-collapse: collapse;
+	margin : auto;
+	margin-bottom: 20px;
+}
+
+th,td{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.AjoutPers td{
+	border:none;
+	text-align: left;
 }
 
 h1{

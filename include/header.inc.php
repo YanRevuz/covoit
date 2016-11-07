@@ -11,6 +11,7 @@
 		<title>
 		<?php echo $title ?>
 		</title>
+?>
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
@@ -27,7 +28,13 @@
 			</div>
 			</div>
 			<div id="connect">
-				<a href="index.php?page=11">Connexion</a>
+				<?php
+					if(isset($_SESSION['login'])){
+						echo "<p>Utilisateur : ".$_SESSION['login']."<a href=\"index.php?page=12\"> Déconnexion</a></p>";
+					}else{
+						echo "<a href=\"index.php?page=11\">Connexion</a>";
+					}
+				?>
 			</div>
 	</div>
 	
